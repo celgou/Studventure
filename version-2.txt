@@ -1,1 +1,68 @@
-version 2.
+version 2:
+
+
+Kodstruktur: Samma som v1 men med flex hihi
+
+Framsida:
+- En h1 med "Studventure"
+- En h2 med "utbytesstudier"
+- body/main (buttons)
+- footer
+- en heltäckande bakgrundsbild som infogas på css.
+
+"Countries":
+- En h1 med "Countries"
+- En h2 med "choose your destination"
+- body/main med grid
+- footer
+- två buttons: En "tillbaka" och en logotyp där man kan trycka tillbaka (header (?))
+
+
+"Cities":
+- header (bild och h1)
+- div (flexbox):
+    - h3 
+    - p
+- h2 (cities)
+- grid
+- footer
+
+Madrid:
+-  header (bild och h1)
+- div (flexbox):
+    - h3 på "About madrid"
+    - p
+- en button (js)
+- searchbar "input" (js)
+- (SCROLLBAR) div med grid:
+    - buttons på varsin sida av div (bestående av p) 
+    - (js med buttons)
+- grid
+- footer
+
+Annons:
+- Div med position: sticky eller absolute (?)
+
+"Subjects":
+- en h1 med "subjects"
+- en grid
+- footer
+- två buttons igen
+
+Designchoice:
+- h1
+- grid
+- footer
+
+Programval:
+- h1
+- div med h2 och p
+- grid
+- image
+- div med h3 och p 
+- button (js)
+- footer
+
+About us:
+- h1
+- grid

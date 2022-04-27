@@ -34,3 +34,25 @@ body {
   min-height: 100vh;
   min-width: 100vw;
 }
+
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  background: #fab15c;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  font-family: "Basic", sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: white;
+}

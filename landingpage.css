@@ -27,6 +27,10 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  background: url(images/bakgrundsbild.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
 }

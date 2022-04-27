@@ -35,6 +35,22 @@ body {
   min-width: 100vw;
 }
 
+.annons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  opacity: 0.8;
+  background: #e2e2e2;
+  border: 2px solid rgba(202, 138, 62, 0.65);
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
 footer {
   display: flex;
   gap: 10px;

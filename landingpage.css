@@ -34,3 +34,41 @@ body {
   min-height: 100vh;
   min-width: 100vw;
 }
+
+.annons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  opacity: 0.8;
+  background: #e2e2e2;
+  border: 2px solid rgba(202, 138, 62, 0.65);
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  background: #fab15c;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  font-family: "Basic", sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: white;
+}

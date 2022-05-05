@@ -30,32 +30,3 @@ h2 {
   margin: 0 auto;
   color: black;
 }
-
-.annons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  opacity: 0.8;
-  background: #e2e2e2;
-  border: 2px solid rgba(202, 138, 62, 0.65);
-  box-sizing: border-box;
-  border-radius: 40px;
-}
-
-#annonsDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  height: 100px;
-  width: 90%;
-  position: absolute;
-  margin: auto;
-  bottom: 0;
-  margin-bottom: 50px;
-}

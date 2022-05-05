@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 160px;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   font-weight: 400;
   font-size: 60px;
   display: flex;
@@ -98,20 +98,6 @@ body {
   margin: auto;
   bottom: 0;
   margin-bottom: 50px;
-}
-
-footer {
-  display: flex;
-  gap: 10px;
-  height: 70px;
-  margin-top: 10px;
-  align-content: center;
-  justify-content: flex-end;
-  background: #fab15c;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 a {

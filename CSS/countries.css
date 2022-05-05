@@ -32,6 +32,7 @@ h2{
   color: black;
 }
 
+
   .toLandingPage {
     display: flex;
     align-items: center;
@@ -111,3 +112,4 @@ h2{
   bottom: 0;
   margin-bottom: 50px;
 }
+

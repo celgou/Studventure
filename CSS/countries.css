@@ -7,8 +7,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 h1 {
-  font-family: "Basic";
+  font-family: 'Basic', sans-serif;
   font-style: normal;
   font-style: normal;
   font-weight: 300;
@@ -16,11 +17,11 @@ h1 {
   line-height: 194px;
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
   margin: 0 auto;
 }
 
-h2 {
+h2{
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -30,6 +31,58 @@ h2 {
   margin: 0 auto;
   color: black;
 }
+
+
+  .toLandingPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 40px; left: 40px;
+  }
+
+.toLandingPageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.goBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #c4c4c4;
+    background: #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 100px; left: 40px;
+}
+
+.goBackButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
 
 .annons {
   display: flex;
@@ -59,3 +112,4 @@ h2 {
   bottom: 0;
   margin-bottom: 50px;
 }
+

@@ -1,0 +1,54 @@
+.annons1 {
+    position: absolute;
+    width: 1035px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    left: 280px;
+    bottom: 60px;
+    position: fixed;
+  }
+  
+  .annons2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    left: 130px;
+    bottom: 60px;
+    position: fixed;
+  }
+
+  .annons1, .annons2 {
+    opacity: 0.8;
+    border: 2px solid rgba(202, 138, 62, 0.65);
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+
+    color: black;
+  }
+
+  .annons1:hover, .annons2:hover {
+    opacity: 70%;
+  }
+
+  .annons1:visited, .annons2:visited {
+    color: black;
+  }
+
+  #annonsDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+  }
+

@@ -1,0 +1,75 @@
+.goBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #fab15c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 100px; left: 40px;
+    border: #716960c9 solid 1px;
+}
+
+.toLandingPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #fab15c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 40px; left: 40px;
+    border: #716960c9 solid 1px;
+  }
+
+.toLandingPageButton, .goBackButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.toLandingPage:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    transition: 0.2s;
+    background-color: #fab15c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 40px; left: 40px;
+    border: #716960c9 solid 1px;
+}
+
+.goBack:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    transition: 0.2s;
+    background: #fab15c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 100px; left: 40px;
+    border: #716960c9 solid 1px;
+}
+
+.toLandingPageButton:active, .goBackButton:active {
+color: black;
+}
+
+.toLandingPageButton:visited, .goBackButton:active {
+color: black;
+}

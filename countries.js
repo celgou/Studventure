@@ -4,7 +4,7 @@ function renderCountries () {
   container.innerHTML = ''
   // Skapar en country-container under #container //
   let countryContainer = document.createElement('div')
-  countryContainer.id = 'country-container'
+  countryContainer.id = 'container'
 
   /* Väljer COUNTRIES från databasen och använder metoden forEach() 
     som exekvererar tillhandhållen funktion en fång för varje array element 

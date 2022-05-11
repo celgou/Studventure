@@ -9,6 +9,7 @@ h1 {
   align-items: center;
   color: #ffffff;
   margin: 0 auto;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
   align-items: center;
   color: #ffffff;
   margin: 0 auto;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
 }
 
 body {

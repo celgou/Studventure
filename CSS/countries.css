@@ -30,6 +30,7 @@ h2{
 
 
 
+<<<<<<< Updated upstream
 .annons {
   display: flex;
   align-items: center;
@@ -57,6 +58,23 @@ h2{
   margin: auto;
   bottom: 0;
   margin-bottom: 50px;
+=======
+.country-box:hover {
+  opacity: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+b {
+  font-size: 27px;
+}
+
+.country-box {
+  border: 1px black solid;
+  padding: 25px;
+  width: 250px;
+  opacity: 50%;
+>>>>>>> Stashed changes
 }
 
 

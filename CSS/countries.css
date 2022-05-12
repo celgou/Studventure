@@ -72,6 +72,11 @@ h2{
   padding: 30px;
 }
 
+.flag {
+  width: 25px;
+  height: 20px;
+
+
 .green-visa-circle {
   display: block;
   border-radius: 50%;
@@ -92,4 +97,7 @@ h2{
   display: inline-block;
   justify-content: center;
   align-items: center;
+  width: 25px;
+  height: 25px;
+
 }

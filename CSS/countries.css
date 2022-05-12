@@ -59,6 +59,10 @@ h2{
   margin-bottom: 50px;
 }
 
+.flag {
+  width: 25px;
+  height: 20px;
+
 
 .green-visa-circle {
   display: block;
@@ -74,4 +78,6 @@ h2{
   background-color: red;
   width: 25px;
   height: 25px;
+
+
 }

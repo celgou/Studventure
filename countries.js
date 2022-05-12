@@ -24,10 +24,14 @@ function renderCountries () {
     //.flag för att få flaggan
     //. visa med ? : om true eller false väljer den ut detta och selectar green eller red visa circle.
     countryBox.innerHTML = `${country.name}
+    
+    <img src="images/${country.flag}" class="flag"/>`
+
     <span class="${
       country.visa ? 'green-visa-circle' : 'red-visa-circle'
     }"></span>
     <span>${country.visa}</span>`
+
     // Nu appendar vi countryBox till countryContainer
     // Därefter apendar vi countryContainer till container som den heter nu i html
     countryContainer.appendChild(countryBox)

@@ -4,7 +4,7 @@ function renderCountries () {
   container.innerHTML = ''
   // Skapar en country-container under #container //
   let countryContainer = document.createElement('div')
-  countryContainer.id = 'country-container'
+  countryContainer.id = 'container'
 
   /* Väljer COUNTRIES från databasen och använder metoden forEach() 
     som exekvererar tillhandhållen funktion en fång för varje array element 
@@ -26,6 +26,11 @@ function renderCountries () {
     countryBox.innerHTML = `${country.name}
     
     <img src="images/${country.flag}" class="flag"/>`
+
+    <span class="${
+      country.visa ? 'green-visa-circle' : 'red-visa-circle'
+    }"></span>
+    <span>${country.visa}</span>`
 
     // Nu appendar vi countryBox till countryContainer
     // Därefter apendar vi countryContainer till container som den heter nu i html

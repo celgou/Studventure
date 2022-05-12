@@ -38,7 +38,7 @@ function renderCountries () {
       country.visa ? 'green-visa-circle' : 'red-visa-circle'
     }"></span>
     <span>${country.visa}</span>`
-
+  
     // Nu appendar vi countryBox till countryContainer
     // Därefter apendar vi countryContainer till container som den heter nu i html
     countryContainer.appendChild(countryBox)

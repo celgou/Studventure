@@ -43,6 +43,12 @@ b {
   border: 1px black solid;
   padding: 25px;
   width: 250px;
+  opacity: 50%;
+}
+
+.country-box:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .flag {

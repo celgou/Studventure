@@ -1,4 +1,4 @@
-.goBack {
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@
     border: #716960c9 solid 1px;
   }
 
-.toLandingPageButton, .goBackButton {
+.toLandingPageButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@
     border: #716960c9 solid 1px;
 }
 
-.goBack:hover {
+.back-button:hover {
     display: flex;
     align-items: center;
     justify-content: center;

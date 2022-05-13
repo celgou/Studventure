@@ -1,17 +1,3 @@
-.back-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  background-color: #fab15c;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  position: fixed;
-  top: 100px; left: 40px;
-  border: #716960c9 solid 1px;
-
-
 .goBack {
     display: flex;
     align-items: center;
@@ -78,11 +64,12 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
-    cursor: pointer;
-
- }
-
+}
 
 .toLandingPageButton:active, .goBackButton:active {
+color: black;
+}
+
+.toLandingPageButton:visited, .goBackButton:active {
 color: black;
 }

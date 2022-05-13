@@ -10,6 +10,8 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
+
+  z-index: 1;
 }
 
 .toLandingPage {
@@ -24,6 +26,7 @@
     position: fixed;
     top: 40px; left: 40px;
     border: #716960c9 solid 1px;
+    z-index: 1;
   }
 
 .toLandingPageButton {
@@ -34,6 +37,7 @@
     height: 50px;
     border-radius: 50%;
     text-decoration: none;
+    z-index: 1;
 }
 
 .toLandingPage:hover {
@@ -49,6 +53,7 @@
     position: fixed;
     top: 40px; left: 40px;
     border: #716960c9 solid 1px;
+    z-index: 1;
 }
 
 .back-button:hover {
@@ -64,12 +69,15 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
+    z-index: 1;
 }
 
 .toLandingPageButton:active, .goBackButton:active {
 color: black;
+z-index: 1;
 }
 
 .toLandingPageButton:visited, .goBackButton:active {
 color: black;
+z-index: 1;
 }

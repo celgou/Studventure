@@ -1,3 +1,6 @@
+function renderCities (cities) {
+  container.innerHTML = ''
+
 // skapa en box för informtion om landet 
 // visar vilket land och information om landet
 let countryName = document.createElement('div')
@@ -6,6 +9,7 @@ countryName.innerHTML = `
 <div class="country-name"> About ${cities.name} </div>
 <div class="country-info"><br>${cities.text}</div>`
 container.appendChild(countryName)
+
 
 function renderCities (cities) {
   container.innerHTML = ''
@@ -16,6 +20,7 @@ countryButton.innerHTML = `&#8249;`
 countryButton.addEventListener('click', () => renderCountries())
 container.appendChild(countryButton)
 
+  
   let city = document.createElement('div')
   city.classList.add('city')
   getCitiesByCountryId(cities.id).forEach(cities => {

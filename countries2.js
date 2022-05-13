@@ -26,8 +26,13 @@ function renderCities (cities) {
   countryName.classList.add('info-box')
   countryName.innerHTML = ` 
 <div class="country-name"> About ${cities.name} </div>
+
+<div class="country-info">${cities.text}</div>`
+container.appendChild(countryName)
+
   <div class="country-info"><br>${cities.text}</div>`
   container.appendChild(countryName)
+
 
   let city = document.createElement('div')
   city.classList.add('city')

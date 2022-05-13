@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 .back-button {
   display: flex;
@@ -13,6 +14,21 @@
   border: #716960c9 solid 1px;
 
   }
+=======
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #fab15c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: fixed;
+    top: 100px; left: 40px;
+    border: #716960c9 solid 1px;
+}
+>>>>>>> Stashed changes
 
 .toLandingPage {
     display: flex;
@@ -67,8 +83,13 @@
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
     cursor: pointer;
+<<<<<<< Updated upstream
   
   }
+=======
+}
+
+>>>>>>> Stashed changes
 .toLandingPageButton:active, .back-button:active {
 color: black;
 }

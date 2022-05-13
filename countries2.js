@@ -10,17 +10,6 @@ countryName.innerHTML = `
 <div class="country-info"><br>${cities.text}</div>`
 container.appendChild(countryName)
 
-
-function renderCities (cities) {
-  container.innerHTML = ''
-
-  let countryButton = document.createElement('div')
-countryButton.classList.add('back-button')
-countryButton.innerHTML = `&#8249;`
-countryButton.addEventListener('click', () => renderCountries())
-container.appendChild(countryButton)
-
-  
   let city = document.createElement('div')
   city.classList.add('city')
   getCitiesByCountryId(cities.id).forEach(cities => {
@@ -37,4 +26,3 @@ function getCitiesByCountryId (inID) {
   return CITIES.filter(city => city.countryID === inID)
 }
 
- 

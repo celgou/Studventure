@@ -29,7 +29,6 @@ function renderCities (cities) {
   <div class="country-info">${cities.text}</div>`
   container.appendChild(countryName)
 
-
   let city = document.createElement('div')
   city.classList.add('city')
   getCitiesByCountryId(cities.id).forEach(cities => {

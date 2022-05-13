@@ -17,7 +17,7 @@ function renderCities (cities) {
   let countryHeaderImage = document.createElement('div')
   countryHeaderImage.id = 'country-banner'
   countryHeaderImage.innerHTML = `
-  <img src="images2/${cities.imagesBig[2]}" class="countryImage"/> `
+  <img src="images/${cities.imagesBig[2]}" class="countryImage"/> `
   container.appendChild(countryHeaderImage)
 
   // skapa en box för informtion om landet 

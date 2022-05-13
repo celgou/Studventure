@@ -37,7 +37,7 @@ function renderCountries () {
     countryContainer.appendChild(countryBox)
     container.appendChild(countryContainer)
 
-    countryBox.addEventListener('click', () => displayCities(country))
+    countryBox.addEventListener('click', () => renderCities(country))
   })
 }
 renderCountries()

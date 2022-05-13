@@ -1,6 +1,17 @@
 function renderCities (cities) {
   container.innerHTML = ''
 
+  let countryButton = document.createElement('div')
+  countryButton.classList.add('back-button')
+  countryButton.innerHTML = `&#8249;`
+  countryButton.addEventListener('click', () => renderCountries())
+  container.appendChild(countryButton)
+
+
+function renderCities (cities) {
+  container.innerHTML = ''
+
+
 // skapa en box för informtion om landet 
 // visar vilket land och information om landet
 let countryName = document.createElement('div')

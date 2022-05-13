@@ -7,14 +7,27 @@ function renderCities (cities) {
   countryButton.addEventListener('click', () => renderCountries())
   container.appendChild(countryButton)
 
-// skapa en box för informtion om landet 
-// visar vilket land och information om landet
-let countryName = document.createElement('div')
-countryName.classList.add('info-box')
-countryName.innerHTML = ` 
-<div class="country-name"> About ${cities.name} </div>
-<div class="country-info"><br>${cities.text}</div>`
-container.appendChild(countryName)
+  // lägger in landets namn
+  let countryHeaderText = document.createElement('div')
+  countryHeaderText.id = 'country-banner-text'
+  countryHeaderText.innerHTML = `${cities.name}`
+  container.appendChild(countryHeaderText)
+
+  // lägger in bilden för landet
+  let countryHeaderImage = document.createElement('div')
+  countryHeaderImage.id = 'country-banner'
+  countryHeaderImage.innerHTML = `
+  <img src="images/${cities.imagesBig[0]}" class="countryImage"/> `
+  container.appendChild(countryHeaderImage)
+
+  // skapa en box för informtion om landet 
+  // visar vilket land och information om landet
+  let countryName = document.createElement('div')
+  countryName.classList.add('info-box')
+  countryName.innerHTML = ` 
+  <div class="country-name"> About ${cities.name} </div>
+  <div class="country-info">${cities.text}</div>`
+  container.appendChild(countryName)
 
   let city = document.createElement('div')
   city.classList.add('city')

@@ -13,3 +13,6 @@ function displaySubCities (cities) {
   <div class="country-info">${cities.text}</div>`
   container.appendChild(displaySubCities)
 }
+
+
+

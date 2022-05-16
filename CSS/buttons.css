@@ -1,4 +1,4 @@
-.goBack {
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +10,8 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
+
+  z-index: 1;
 }
 
 .toLandingPage {
@@ -24,9 +26,10 @@
     position: fixed;
     top: 40px; left: 40px;
     border: #716960c9 solid 1px;
+    z-index: 1;
   }
 
-.toLandingPageButton, .goBackButton {
+.toLandingPageButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +37,7 @@
     height: 50px;
     border-radius: 50%;
     text-decoration: none;
+    z-index: 1;
 }
 
 .toLandingPage:hover {
@@ -49,9 +53,10 @@
     position: fixed;
     top: 40px; left: 40px;
     border: #716960c9 solid 1px;
+    z-index: 1;
 }
 
-.goBack:hover {
+.back-button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,17 +69,17 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
-<<<<<<< Updated upstream
-=======
     z-index: 1;
     cursor: pointer;
->>>>>>> Stashed changes
+  
 }
 
 .toLandingPageButton:active, .goBackButton:active {
 color: black;
+z-index: 1;
 }
 
 .toLandingPageButton:visited, .goBackButton:active {
 color: black;
+z-index: 1;
 }

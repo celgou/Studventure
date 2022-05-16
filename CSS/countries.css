@@ -44,10 +44,12 @@ b {
   padding: 25px;
   width: 250px;
   opacity: 50%;
+  transition: opacity 0.5s;
 }
 
 .country-box:hover {
   opacity: 100%;
+  transition: opacity 0.5s;
   cursor: pointer;
 }
 

@@ -64,6 +64,11 @@
     position: fixed;
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
+<<<<<<< Updated upstream
+=======
+    z-index: 1;
+    cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 .toLandingPageButton:active, .goBackButton:active {

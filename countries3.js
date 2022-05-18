@@ -20,6 +20,7 @@ function displaySubCities (cities) {
   <div class="country-name"> About ${cities.name} </div>
   <div class="country-info">${cities.text}</div>`
   container.appendChild(cityName)
+
 }
 
 let program = PROGRAMMES;
@@ -64,6 +65,7 @@ function findCityByUni(uniID, cityID) {
 
     }
   }
+
 }
 
 

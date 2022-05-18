@@ -11,7 +11,7 @@ function displaySubCities (cities) {
   cityName.innerHTML = ` 
   <div class="country-name"> About ${cities.name} </div>
   <div class="country-info">${cities.text}</div>`
-  container.appendChild(displaySubCities)
+  container.appendChild(cityName)
 }
 
 

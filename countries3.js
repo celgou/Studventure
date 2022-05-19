@@ -1,3 +1,5 @@
+let cityID; 
+let programArray;
 
 function getCitiesByEntertainmentPlaces (inID) {
   return ENTERTAINMENT_PLACES.filter(entplaces => entplaces.cityID === inID)
@@ -13,7 +15,9 @@ function getCitiesByRating (inID) {
 
 
 function displaySubCities (cities) {
-  
+  cityID = cities.id;
+  programArray = findProgramInCity();
+  let firstProgram = findProgramInCity()[0]; // för att inte behöva loopa igenom flera ggr så sidan laddar snabbare
   container.innerHTML = ''
 
   // få fram bilden till staden
@@ -45,7 +49,40 @@ function displaySubCities (cities) {
   `
   container.appendChild(readMoreButtonDiv)
 
+  let programContainer = document.createElement('div'); //för att slippa ta bort och rendera om allt, kopplat till renderCarousel
+  programContainer.innerHTML = `
+  <div id="carouselDiv">
+  <span id="leftArrow" onClick='leftArrowClick()'><</span>
+  <div id="programName">${firstProgram.name}</div>
+  <span id="rightArrow" onClick='rightArrowClick()'>></span>
+  </div>
+
+  <div id="programInfo">LEVEL: ${LEVELS[firstProgram.level]}
+  <br>
+  LANGUAGE: ${LANGUAGES[firstProgram.language].name}</div>
+
+  <div id="comments"></div>
+  ` 
+
+  container.appendChild(programContainer);
+  let commentsDiv = document.getElementById('comments');
+  commentsDiv.innerHTML = ''; 
   
+  COMMENTS_PROGRAMME.forEach(comment => { 
+    if (comment.programmeID == firstProgram.id) {
+      let commentDiv = document.createElement('div');
+      commentDiv.innerHTML = `
+      <span>Comment</span>
+      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}</span>
+      <span>${comment.alias}</span>
+      <p>${comment.text}</p>
+      `
+
+      commentsDiv.append(commentDiv);
+    }
+
+  })
+
   /*
   // en funktion för rating (kolla denna nested funktion??)
   let rating = document.createElement('div')
@@ -206,4 +243,56 @@ function findCityByUni(uniID, cityID) {
 
 }
 
+function findProgramInCity() {
+  return PROGRAMMES.filter(program => {
+    if (findCityByUni (program.universityID, cityID)) {
+      return program; 
+    }
+  })
+}
+
+let arrayIndex = 0; 
+
+function leftArrowClick() {  //tomma för att arrayIndex är global
+  if (arrayIndex == 0) {
+    arrayIndex = programArray.length-1;
+  } else { 
+    arrayIndex--; //hittar värdet och gör minust ett
+  } 
+  changeCity();
+}
+
+function rightArrowClick() {
+  if (arrayIndex == programArray.length-1) {
+    arrayIndex = 0;
+  } else { 
+    arrayIndex++;
+  } 
+  changeCity();
+}
+
+function changeCity() {
+  let program = findProgramInCity()[arrayIndex];
+  let programName = document.getElementById('programName');
+  programName.textContent = program.name;
+
+  let commentsDiv = document.getElementById('comments');
+  commentsDiv.innerHTML = ''; 
+
+  COMMENTS_PROGRAMME.forEach(comment => { 
+    if (comment.programmeID == program.id) {
+      let commentDiv = document.createElement('div');
+      commentDiv.innerHTML = `
+      <span>Comment</span>
+      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}</span>
+      <span>${comment.alias}</span>
+      <p>${comment.text}</p>
+      `
+
+      commentsDiv.append(commentDiv);
+    }
+
+  })
+
+}
 

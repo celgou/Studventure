@@ -70,6 +70,8 @@
     top: 100px; left: 40px;
     border: #716960c9 solid 1px;
     z-index: 1;
+    cursor: pointer;
+  
 }
 
 .toLandingPageButton:active, .goBackButton:active {

@@ -1,6 +1,7 @@
 let currentCityID 
 
 function displaySubCities (cities) {
+  
   container.innerHTML = ''
 
   let countryButton = document.createElement('div')
@@ -39,13 +40,16 @@ let input = document.getElementById("programSearch");
 
 function searchProgramBox() {
   let input = document.getElementById("programSearch");
+  
     return input.value.toLowerCase();
 }
 
 input.addEventListener("keyup", programSearch);
 
+
 function programSearch() {
     let programsArray = []
+    
     for (let i = 0; i < PROGRAMMES.length; i++){
         if ("" == searchProgramBox()) {
             document.getElementById("result").innerHTML = ""

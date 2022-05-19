@@ -38,6 +38,7 @@ function displaySubCities (cities) {
   `
   container.appendChild(readMoreButtonDiv)
 
+  
   /*
   // en funktion för rating (kolla denna nested funktion??)
   let rating = document.createElement('div')
@@ -128,7 +129,7 @@ function readMoreButton() {
     moreText[i].style.display = "inline";
     }
   }
-=======
+
   let countryButton = document.createElement('div')
   countryButton.classList.add('back-button')
   countryButton.innerHTML = `&#8249;`

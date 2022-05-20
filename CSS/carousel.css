@@ -1,0 +1,57 @@
+
+#programContainer {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#carouselDiv {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+#programName {
+    background-color: #fab15c;
+    font-size: 18px;
+    padding: 8px;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#leftArrow, #rightArrow {
+    color: #fab15c;
+    font-weight: bolder;
+    font-size: 40px;
+    transition: opacity 0.2s;
+}
+
+#leftArrow:hover, #rightArrow:hover {
+    opacity: 50%;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#programInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#comments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 800px;
+    border: 1px black solid;
+    padding: 10px;
+
+    height: 200px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}

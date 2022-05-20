@@ -6,10 +6,9 @@
   }
   
   .city {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
   }
   
   .CountryImage {
@@ -71,3 +70,14 @@
       display: none;
   }
 
+  #country-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #city-banner-text {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }

@@ -24,7 +24,7 @@ function renderCountries () {
     //.flag för att få flaggan
     //. visa med ? : om true eller false väljer den ut detta och selectar green eller red visa circle.
     countryBox.innerHTML = `
-    <img src="images/${country.flag}" class="flag"/> <b>${country.name}</b>
+    <img src="images/${country.flag}" class="flag"/> <b id="countryN">${country.name}</b>
     <br>
     <br>
     <br>

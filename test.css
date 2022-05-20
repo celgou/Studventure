@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    gap: 20px;
+
+    width: 800px;
+}
+
+#names {
+    background-color: rgb(166, 166, 166);
+    border: 1px solid black;
+}
+
+#arrow {
+    border: 1px solid black;
+}
+
+#inforuta {
+    border: 1px black solid;
+    background-color: rgb(166, 166, 166);
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 780px;
+    text-align: center;
+    padding: 10px;
+}
+
+#arrow:hover {
+    opacity: 30%;
+    transition: opacity 0.3s;
+}

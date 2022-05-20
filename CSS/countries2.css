@@ -3,20 +3,19 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-<<<<<<< Updated upstream
 .info-box {
-    background-color: rgba(211, 211, 211, 0.592);
-    width: 90vw;
-    height: 150px;
-  }
-  
+  background-color: rgba(211, 211, 211, 0.592);
+  width: 90vw;
+  height: 150px;
+}
+
   .country-name {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding-top: 15px;
   }
-=======
+
 .info-box-country {
   background-color: rgba(211, 211, 211, 0.592);
   padding: 20px;
@@ -32,13 +31,20 @@ font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   padding-top: 15px;
 }
->>>>>>> Stashed changes
+
+.country-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+
   
-  .country-info {
-    font-size: 12px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
+.country-info {
+  font-size: 12px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
 
 .city {
   display: grid;
@@ -49,6 +55,7 @@ font-family: Arial, Helvetica, sans-serif;
 .cityImage {
   width: 270px;
   height: 200px;
+  transition: filter 0.6s, top 0.6s , color 0.6s , font-size 0.6s , text-shadow 0.5s , opacity 0.5s;
 }
 
 .place-name {
@@ -74,8 +81,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 .city-element:hover > .cityImage {
   filter: grayscale(100%);
-  transition: filter 0.6s;
-  transition: top 0.6s , color 0.6s , font-size 0.6s , text-shadow 0.5s , opacity 0.5s;
+  transition: filter 0.6s, top 0.6s , color 0.6s , font-size 0.6s , text-shadow 0.5s , opacity 0.5s;
+  cursor: pointer;
 }
 
 
@@ -86,9 +93,11 @@ font-family: Arial, Helvetica, sans-serif;
   align-items: center;
   transition: top 0.6s , color 0.6s , font-size 0.6s , text-shadow 0.5s , opacity 0.5s;
   color: white;
-  font-size: 30px;
+  font-size: 23px;
   top: 50%;
   text-shadow: 0 0 2px black;
+  cursor: pointer;
+
 }
 
 .countryImage {
@@ -109,9 +118,7 @@ font-family: Arial, Helvetica, sans-serif;
   font-size: 125px;
   position: relative;
   top: 250px;
-<<<<<<< Updated upstream
   left: 40vw;
-=======
   text-align: center;
   z-index: 1;
 }
@@ -131,5 +138,4 @@ font-family: Arial, Helvetica, sans-serif;
 
 form{
   display: none;
->>>>>>> Stashed changes
 }

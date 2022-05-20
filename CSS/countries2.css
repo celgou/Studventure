@@ -3,6 +3,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
+<<<<<<< Updated upstream
 .info-box {
     background-color: rgba(211, 211, 211, 0.592);
     width: 90vw;
@@ -15,6 +16,23 @@ font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 15px;
   }
+=======
+.info-box-country {
+  background-color: rgba(211, 211, 211, 0.592);
+  padding: 20px;
+  margin-top: 20px;
+  width: 970px;
+}
+  
+.country-name {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+>>>>>>> Stashed changes
   
   .country-info {
     font-size: 12px;
@@ -24,9 +42,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 .city {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
-  gap: 60px;
 }
 
 .cityImage {
@@ -77,18 +94,42 @@ font-family: Arial, Helvetica, sans-serif;
 .countryImage {
   object-fit: cover;
   height: 200px;
-  width: 90vw;
-  border-radius: 10px;
+  width: 70vw;
   object-position: center;
   opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #country-banner-text {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: 300;
-  font-size: 50px;
-  position: absolute;
+  color: #fab15c;
+  font-weight: bolder;
+  font-size: 125px;
+  position: relative;
   top: 250px;
+<<<<<<< Updated upstream
   left: 40vw;
+=======
+  text-align: center;
+  z-index: 1;
+}
+
+/* #result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 30px;
+  font-size: 17px;
+} */
+
+#programSearch{
+  width: 500px;
+  display: none;
+}
+
+form{
+  display: none;
+>>>>>>> Stashed changes
 }

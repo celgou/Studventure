@@ -49,9 +49,11 @@ padding-top: 85px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    width: 800px;
+    width: 70vw;
     border: 1px black solid;
     padding: 10px;
+
+    border-radius: 10px;
 
     height: 200px;
     overflow: scroll;

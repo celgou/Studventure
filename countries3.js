@@ -40,8 +40,11 @@ function displaySubCities (cities) {
   countryName.classList.add('country-text')
   countryName.classList.add('more')
   countryName.innerHTML = `
-  About ${cities.name}
-  <div class="country-info">${cities.text}<span id="alwaysShow"></span></div>`
+  <div id="citieInfoBox">
+  <div id="aboutCitieName"> About ${cities.name}</div>
+  <div class="country-info">${cities.text}<div id="alwaysShow"></div></div>
+  </div>
+  `
   container.appendChild(countryName)
 
   // funktion för read more knappen
@@ -55,9 +58,9 @@ function displaySubCities (cities) {
   let programContainer = document.createElement('div'); //för att slippa ta bort och rendera om allt, kopplat till renderCarousel
   programContainer.innerHTML = `
   <div id="carouselDiv">
-  <span id="leftArrow" onClick='leftArrowClick()'><</span>
+  <div id="leftArrow" onClick='leftArrowClick()'><</div>
   <div id="programName">${firstProgram.name}</div>
-  <span id="rightArrow" onClick='rightArrowClick()'>></span>
+  <div id="rightArrow" onClick='rightArrowClick()'>></div>
   </div>
 
 
@@ -81,9 +84,15 @@ function displaySubCities (cities) {
     if (comment.programmeID == firstProgram.id) {
       let commentDiv = document.createElement('div');
       commentDiv.innerHTML = `
-      Comment
+
+      <div>Comment</div>
+      <div>${comment.date.year}/${comment.date.month}/${comment.date.day}</div>
+      <div>${comment.alias}</div>
+
+      /*Comment
       <span>${comment.date.year}/${comment.date.month}/${comment.date.day}, ${comment.alias}</b></span>
-      <br>
+      <br>*/
+
       <p>${comment.text}</p>
       `
 
@@ -105,12 +114,12 @@ function displaySubCities (cities) {
   })
 */
 
-  // en funktion för kommentarer
+  // en funktion för entertainmentplaces
   let entertainment = document.createElement('div')
   entertainment.classList.add('commentsEntertainment')
   getCitiesByEntertainmentPlaces(cities.id).forEach(cities => {
     let entertainmentElement = document.createElement('div')
-    entertainmentElement.innerHTML = `<div class="comments-entertainment"><span class="more">${cities.name}</span></div>`
+    entertainmentElement.innerHTML = `<div class="comments-entertainment"><div class="more">${cities.name}</div></div>`
     entertainment.append(entertainmentElement)
     entertainmentElement.addEventListener('click', () =>
       displaySubCities(cities)
@@ -126,24 +135,24 @@ function displaySubCities (cities) {
     let commentElement = document.createElement('div')
     commentElement.innerHTML = `
     
-    <div class="date"><span class="more">
+    <div class="commentsBox" class"more">
+    <div class="date"><div class="more">
     ${cities.alias}
     <br>
     (${cities.date.year}
     0${cities.date.month}&nbsp;/
-    ${cities.date.day})</span></div>
+    ${cities.date.day})</div></div>
     
     <br>
     
-    <div class="rating"><span class="more">
+    <div class="rating"><div class="more">
     Stars:${cities.stars.out}<br>
     Food:${cities.stars.food}<br>
-    Accomodation:${cities.stars.accomodation}</span></div>
+    Accomodation:${cities.stars.accomodation}</div></div>
     
     <br>
-    <div class="comments-city"><span class="more">${cities.text}</span></div><br>
-   
-
+    <div class="comments-city"><div class="more">${cities.text}</div></div><br>
+    </div>
    
     `
     commentsCity.append(commentElement)
@@ -179,7 +188,7 @@ function readMoreButton() {
     buttonText.innerHTML = "Read less"
     // foor loop för att gå igenom moreText som är en array
     for (let i = 0; i < moreText.length; i++) {
-    moreText[i].style.display = "inline";
+    moreText[i].style.display = "grid";
     }
   }
 
@@ -298,9 +307,9 @@ function changeCity() {
     if (comment.programmeID == program.id) {
       let commentDiv = document.createElement('div');
       commentDiv.innerHTML = `
-      <span>Comment</span>
-      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}</span>
-      <span>${comment.alias}</span>
+      <div>Comment</div>
+      <div>${comment.date.year}/${comment.date.month}/${comment.date.day}</div>
+      <div>${comment.alias}</div>
       <p>${comment.text}</p>
       `
 

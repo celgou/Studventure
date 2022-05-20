@@ -20,20 +20,20 @@ function displaySubCities (cities) {
   let firstProgram = findProgramInCity()[0]; // för att inte behöva loopa igenom flera ggr så sidan laddar snabbare
   container.innerHTML = ''
 
+  // få fram bilden till staden
   let countryBanner = document.createElement('div')
   countryBanner.id = 'country-banner'
   countryBanner.innerHTML = `
   <img src="images/${cities.imagesBig[0]}" class="CountryImage"/> `
   container.appendChild(countryBanner)
-<<<<<<< Updated upstream
-=======
+
 
   // stadens namn 
   let cityNameText = document.createElement('div')
   cityNameText.id = 'city-banner-text'
   cityNameText.innerHTML = `Welcome to ${cities.name}`
   container.appendChild(cityNameText)
->>>>>>> Stashed changes
+
  
   let countryName = document.createElement('div')
   countryName.classList.add('country-text')
@@ -150,29 +150,29 @@ function displaySubCities (cities) {
   h1.innerHTML = 'Cities'
 }
 
-
+// funktion till read more och less knappen
 function readMoreButton() {
   let alwaysShow = document.getElementById("alwaysShow")
   let moreText = document.getElementsByClassName("more")
   let buttonText = document.getElementById("moreButton")
 
-//   console.log(moreText)
 
-//   // här behövs en for each som går igenon moreText eftersom det är flera class element som bildar en array
 
-  for (let i = 0; i < moreText.length; i++) {
-  moreText[i].style.display = "none";
-  }
+  // for (let i = 0; i < moreText.length; i++) {
+  // moreText[i].style.display = "none";
+  // }
 
   if (alwaysShow.style.display === "none") {
     alwaysShow.style.display = "inline"
     buttonText.innerHTML = "Read more"
+    // foor loop för att gå igenom moreText som är en array
     for (let i = 0; i < moreText.length; i++) {
     moreText[i].style.display = "none";
     }
   } else {
     alwaysShow.style.display = "none"
     buttonText.innerHTML = "Read less"
+    // foor loop för att gå igenom moreText som är en array
     for (let i = 0; i < moreText.length; i++) {
     moreText[i].style.display = "inline";
     }

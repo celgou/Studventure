@@ -18,11 +18,20 @@ body {
     justify-content: center;
     padding: 10px;
   }
+  
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
   .city {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 60px;
+  }
 
   
 .CountryImage {
@@ -38,17 +47,12 @@ body {
 }
 
 #city-banner-text {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;´
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   top: 300px;
   left: 45vw;
-
 }
 
   /* .country-info {
@@ -160,7 +164,6 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-
 }
 
 .commentsBox {
@@ -184,7 +187,6 @@ body {
   display: none;
 }
 
-
 #country-banner {
   display: flex;
   justify-content: center;
@@ -205,7 +207,6 @@ body {
   left: 800px;
 } 
 
-
 #moreButton {
   align-items: center;
   background-color: #fab15c;
@@ -215,24 +216,19 @@ body {
   color: #111;
   cursor: pointer;
   display: flex;
-  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter,sans-serif;
   font-size: 16px;
   height: 48px;
-  width: 120px;
   justify-content: center;
-  /* line-height: 24px; */
-  /* max-width: 100%; */
+  line-height: 24px;
+  max-width: 100%;
   padding: 0 25px;
+  position: relative;
   text-align: center;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
-  position: absolute;
-  top: 400px; left: 700px;
-
 }
 
 #moreButton:after {
@@ -267,43 +263,4 @@ body {
   #moreButton {
     padding: 0 40px;
   }
-
 }
-
-
-  #country-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  #city-banner-text {
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-  }
-
-  #moreButton {
-    border: 1px black solid;
-    background-color: #fab15c;
-    border-radius: 5px;
-    padding: 5px;
-    transition: opacity 0.1s;
-  }
-
-  .readMoreButtonDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-
-  #moreButton:hover {
-    opacity: 80%;
-    transition: opacity 0.1s;
-  }
-
-
-}
-

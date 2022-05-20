@@ -1,4 +1,5 @@
 let cityID; 
+let arrayIndex = 0; 
 let programArray;
 
 function getCitiesByEntertainmentPlaces (inID) {
@@ -59,15 +60,19 @@ function displaySubCities (cities) {
   <span id="rightArrow" onClick='rightArrowClick()'>></span>
   </div>
 
-  
+
   <div id="programInfo">
-  <b>Level:</b> ${LEVELS[programArray[arrayIndex].level]}
-  <b>Language:</b> ${LANGUAGES[programArray[arrayIndex].language].name}
+  <div><b>Level:</b> <span id="level">${LEVELS[firstProgram.level]}</span></div>
+  <div><b>Language:</b> <span id="language">${LANGUAGES[firstProgram.language].name}</span></div>
   </div>
+
+  <div id="readStudentComments">Comments from previous students:</div>
 
   <div id="comments"></div>
   ` 
 
+
+  
   container.appendChild(programContainer);
   let commentsDiv = document.getElementById('comments');
   commentsDiv.innerHTML = ''; 
@@ -184,6 +189,7 @@ function readMoreButton() {
   countryButton.addEventListener('click', () => renderCountries())
   container.appendChild(countryButton)
   currentCityID = cities.id; 
+  
   let h1 = document.getElementsByTagName('h1')[0]
   h1.innerHTML = 'Cities'
 
@@ -255,8 +261,6 @@ function findProgramInCity() {
   })
 }
 
-let arrayIndex = 0; 
-
 function leftArrowClick() {  //tomma för att arrayIndex är global
   if (arrayIndex == 0) {
     arrayIndex = programArray.length-1;
@@ -280,8 +284,15 @@ function changeCity() {
   let programName = document.getElementById('programName');
   programName.textContent = program.name;
 
+
   let commentsDiv = document.getElementById('comments');
   commentsDiv.innerHTML = ''; 
+
+  let level = document.getElementById('level');
+  let language = document.getElementById('language');
+
+  level.textContent = LEVELS[programArray[arrayIndex].level];
+  language.textContent = LANGUAGES[programArray[arrayIndex].language].name;
 
   COMMENTS_PROGRAMME.forEach(comment => { 
     if (comment.programmeID == program.id) {

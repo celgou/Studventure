@@ -81,3 +81,23 @@
     text-align: center;
     padding: 20px;
   }
+
+  #moreButton {
+    border: 1px black solid;
+    background-color: #fab15c;
+    border-radius: 5px;
+    padding: 5px;
+    transition: opacity 0.1s;
+  }
+
+  .readMoreButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  #moreButton:hover {
+    opacity: 80%;
+    transition: opacity 0.1s;
+  }

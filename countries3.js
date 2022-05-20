@@ -25,6 +25,15 @@ function displaySubCities (cities) {
   countryBanner.innerHTML = `
   <img src="images/${cities.imagesBig[0]}" class="CountryImage"/> `
   container.appendChild(countryBanner)
+<<<<<<< Updated upstream
+=======
+
+  // stadens namn 
+  let cityNameText = document.createElement('div')
+  cityNameText.id = 'city-banner-text'
+  cityNameText.innerHTML = `Welcome to ${cities.name}`
+  container.appendChild(cityNameText)
+>>>>>>> Stashed changes
  
   let countryName = document.createElement('div')
   countryName.classList.add('country-text')
@@ -50,9 +59,11 @@ function displaySubCities (cities) {
   <span id="rightArrow" onClick='rightArrowClick()'>></span>
   </div>
 
-  <div id="programInfo">LEVEL: ${LEVELS[firstProgram.level]}
-  <br>
-  LANGUAGE: ${LANGUAGES[firstProgram.language].name}</div>
+  
+  <div id="programInfo">
+  <b>Level:</b> ${LEVELS[programArray[arrayIndex].level]}
+  <b>Language:</b> ${LANGUAGES[programArray[arrayIndex].language].name}
+  </div>
 
   <div id="comments"></div>
   ` 
@@ -65,9 +76,9 @@ function displaySubCities (cities) {
     if (comment.programmeID == firstProgram.id) {
       let commentDiv = document.createElement('div');
       commentDiv.innerHTML = `
-      <span>Comment</span>
-      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}</span>
-      <span>${comment.alias}</span>
+      Comment
+      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}, ${comment.alias}</b></span>
+      <br>
       <p>${comment.text}</p>
       `
 

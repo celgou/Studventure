@@ -58,7 +58,7 @@ h2 {
     flex-direction: column;
     height: 400px;
     width: 300px;
-    
+    transition: 0.3s;
 }
 
 img{

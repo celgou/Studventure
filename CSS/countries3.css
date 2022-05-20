@@ -19,12 +19,20 @@ body {
     padding: 10px;
   }
   
+
 .city {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
+  .city {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
   
 .CountryImage {
   width: 600px;
@@ -241,3 +249,36 @@ body {
     padding: 0 40px;
   }
 }
+
+  #country-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #city-banner-text {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #moreButton {
+    border: 1px black solid;
+    background-color: #fab15c;
+    border-radius: 5px;
+    padding: 5px;
+    transition: opacity 0.1s;
+  }
+
+  .readMoreButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  #moreButton:hover {
+    opacity: 80%;
+    transition: opacity 0.1s;
+  }
+

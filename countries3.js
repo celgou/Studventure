@@ -89,10 +89,6 @@ function displaySubCities (cities) {
       <div>${comment.date.year}/${comment.date.month}/${comment.date.day}</div>
       <div>${comment.alias}</div>
 
-      /*Comment
-      <span>${comment.date.year}/${comment.date.month}/${comment.date.day}, ${comment.alias}</b></span>
-      <br>*/
-
       <p>${comment.text}</p>
       `
 

@@ -64,11 +64,6 @@ h2 {
 img{
     width: 250px;
     height: 300px;
-    border-radius: 100%;
     border: 1px solid black;
 }
 
-.ruta:hover{
-    background-color: #3c3a3a18;
-    transition: 0.3s;
-}

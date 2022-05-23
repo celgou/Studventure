@@ -1,5 +1,4 @@
 
-
 h1 {
   font-family: 'Basic', sans-serif;
   font-weight: 300;
@@ -64,12 +63,97 @@ h1 {
   display: none;
 }
 
+.readMoreButtonDiv {
+  margin-bottom: 80px;
+} 
 
+#moreButton {
+  align-items: center;
+  background-color: #fab15c;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 850px;
+  left: 800px;
+}
 
+#moreButton:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
 
+#moreButton:hover:after {
+  transform: translate(0, 0);
+}
 
+#moreButton:active {
+  background-color: #fab15c;
+  outline: 0;
+}
 
+#moreButton:hover {
+  outline: 0;
+}
 
+@media (min-width: 768px) {
+  #moreButton {
+    padding: 0 40px;
+  }
+}
+
+.programmeCityInformation {
+  margin: 10px;
+}
+
+.cityInfoContainer {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vh;
+  background: rgba(183, 183, 183, 0.3);
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.aboutCity {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.infoCityText {
+  font-size: 12px;
+  text-align: center;
+}
 
 
 

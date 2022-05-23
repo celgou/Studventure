@@ -3,7 +3,7 @@ h1 {
   font-family: "Advent Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 160px;
+  font-size: 120px;
   line-height: 194px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-family: "Advent Pro", sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  background: url(bakgrundsbild.jpg);
+  background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

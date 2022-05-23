@@ -47,7 +47,7 @@ function displaySubCities (cities) {
   `
   container.appendChild(countryName)
 
-  // funktion för read more knappen
+  // plats för read more knappen
   let readMoreButtonDiv = document.createElement('div')
   readMoreButtonDiv.classList.add('readMoreButtonDiv')
   readMoreButtonDiv.innerHTML = `
@@ -110,7 +110,7 @@ function displaySubCities (cities) {
   })
 */
 
-  // en funktion för entertainmentplaces
+  // entertainmentplaces
   let entertainment = document.createElement('div')
   entertainment.classList.add('commentsEntertainment')
   getCitiesByEntertainmentPlaces(cities.id).forEach(cities => {
@@ -123,7 +123,7 @@ function displaySubCities (cities) {
     countryName.append(entertainment)
   })
 
-  // en funktion för kommentarer
+  // kommentarer
   let commentsCity = document.createElement('div')
   commentsCity.classList.add('commentsCity')
   commentsCity.classList.add('more')

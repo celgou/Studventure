@@ -47,7 +47,7 @@
     width: 37px;
     height: 37px;
     transition: 0.2s;
-    background-color: #fab15c;
+    background-color: darkslategray;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     position: fixed;
@@ -63,7 +63,7 @@
     width: 37px;
     height: 37px;
     transition: 0.2s;
-    background: #fab15c;
+    background: darkslategray;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     position: fixed;

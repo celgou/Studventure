@@ -1,11 +1,49 @@
-body { 
+h1 {
+    text-align: center;
+    font-family: "Advent Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 194px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0 auto;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
+  }
+  
+  h2 {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0 auto;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
+  }
+  
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
+    background: url(travel.jpg);
     min-height: 100vh;
     min-width: 100vw;
-    background-color: #cabdb0;
+  }
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
 
 }
 
@@ -59,62 +97,3 @@ body {
     color: black;
     z-index: 1;
     }
-
-h1 {
-    text-align: center;
-    font-family: "Advent Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 194px;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    margin: 0 auto;
-    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
-}
-
-
-h2 {
-    font-family: "Advent Pro", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    margin: 0 auto;
-    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.512);
-}
-
-#people1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 20px;
-}
-
-#people2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 20px;  
-}
-
-.ruta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 400px;
-    width: 300px;
-    transition: 0.3s;
-}
-
-img{
-    width: 250px;
-    height: 300px;
-    border: 1px solid black;
-}
-

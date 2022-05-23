@@ -60,6 +60,10 @@ h1 {
   height: 50px;
 }
 
+#more {
+  display: none;
+}
+
 
 
 

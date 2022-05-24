@@ -55,7 +55,7 @@ h1 {
 
 .program-sub-name-city {
   margin: auto;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   width: 300px;

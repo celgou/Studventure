@@ -21,8 +21,7 @@ h1 {
 
 .cityImage {
   display: flex;
-  align-items: right;
-  width: 45px;
+  align-items: center;
   height: 35px;
   padding: 10px;
   margin-left: 15px;
@@ -39,9 +38,11 @@ h1 {
 
 
 .program-sub-name {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   border: 1px black solid;
   padding: 25px;
   height: 100px;
@@ -60,10 +61,12 @@ h1 {
 }
 
 .program-sub-name-city {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   margin: auto;
   /* display: flex; */
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;

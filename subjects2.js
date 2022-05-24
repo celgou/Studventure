@@ -52,7 +52,7 @@ function displayProgrammes (inProgram) {
     getCityIdByUniversityID(program.universityID).forEach(cityInfo => {
       getCityNameByCityID(cityInfo.cityID).forEach(cityInfo => {
         getCountryByCityID(cityInfo.countryID).forEach(countryInfo => {
-          let programCityFlag = document.createElement('span')
+          let programCityFlag = document.createElement('div')
           programCityFlag.classList.add('program-sub-name-city')
           programCityFlag.style.color = 'black'
           programCityFlag.addEventListener('click', () =>

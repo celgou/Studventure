@@ -23,6 +23,12 @@ h1 {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
 
 }
 
@@ -30,18 +36,29 @@ h1 {
   display: flex;
   align-items: center;
   justify-self: center;
-  font-size: 50px;
+  font-size: 30px;
   border: 1px black solid;
   padding: 25px;
-  height: 100px;
-  width: 300px;
+  height: 80px;
+  width: 250px;
   opacity: 50%;
   transition: opacity 0.5s;
+  text-align: center;
+  padding-top: 15px;
+  transition: background-color 1.5s;
+
 }
+
 
 
 .subject-box:hover {
   opacity: 100%;
   transition: opacity 0.5s;
   cursor: pointer;
+  background-color: rgb(156, 205, 237);
+
+}
+
+.subject-box:active{
+ background-color: rgb(155, 167, 179);
 }

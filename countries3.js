@@ -20,7 +20,11 @@ function displaySubCities (cities) {
   programArray = findProgramInCity();
   let firstProgram = findProgramInCity()[0]; // för att inte behöva loopa igenom flera ggr så sidan laddar snabbare
   container.innerHTML = ''
-
+  let countryButton = document.createElement('div')
+  countryButton.classList.add('back-button')
+  countryButton.innerHTML = `&#8249;`
+  countryButton.addEventListener('click', () => history.go(0))
+  container.appendChild(countryButton)
   // få fram bilden till staden
   let countryBanner = document.createElement('div')
   countryBanner.id = 'country-banner'
@@ -188,11 +192,11 @@ function readMoreButton() {
     }
   }
 
-  let countryButton = document.createElement('div')
+  /*let countryButton = document.createElement('div')
   countryButton.classList.add('back-button')
   countryButton.innerHTML = `&#8249;`
   countryButton.addEventListener('click', () => renderCountries())
-  container.appendChild(countryButton)
+  container.appendChild(countryButton)*/
   currentCityID = cities.id; 
   
   let h1 = document.getElementsByTagName('h1')[0]

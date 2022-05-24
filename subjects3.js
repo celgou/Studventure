@@ -72,12 +72,14 @@ function displayUniversities (inUniversity) {
       programLevel.classList.add('country-text')
       programLevel.innerHTML = `
       <br>
-      INFORMATION <br>
-      Level:${inUniversity.level} <br>
-      Exchange Students:${inUniversity.exchangeStudents} <br>
-      Local Students:${inUniversity.localStudents} <br>
-      Success Rate:${inUniversity.successRate} <br>
-      Entry Grades: ${inUniversity.entryGrades} <br>
+      <div id="programmeInfoText">PROGRAMME INFORMATION</div> 
+      <div id="programmeInfoContainer">
+      <div id="level">Level:${inUniversity.level}</div>
+      <div id="exchangeStudents">Exchange Students:${inUniversity.exchangeStudents}</div> 
+      <div id="localStudents">Local Students:${inUniversity.localStudents}</div> 
+      <div id="successRate">Success Rate:${inUniversity.successRate}</div> 
+      <div id="entryGardes">Entry Grades: ${inUniversity.entryGrades}</div> 
+      </div>
       `
       container.appendChild(universityName)
       // Information om programmet.

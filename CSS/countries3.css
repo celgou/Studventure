@@ -89,6 +89,8 @@ body {
   width: 68vw;
   justify-content: center;
 }
+
+
   
   /* .country-sub-text {
     margin-left: auto;
@@ -109,7 +111,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-top: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
 } 
   
 .comments-city {
@@ -126,10 +128,11 @@ body {
   grid-column-gap: 40px;
   justify-content: center;
   pointer-events: none;
+
 }
   
 .comments-entertainment {
-  background-color: rgb(181, 189, 189);
+  background-color: rgb(248, 251, 251);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -137,20 +140,20 @@ body {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  height: 40px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
 .commentsBox {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.392) 0px 1px 4px;
+  height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.554);
+  background-color: #ffffffac;
 }
 
 .date {

@@ -130,7 +130,7 @@ body {
 }
   
 .comments-entertainment {
-  background-color: rgb(181, 189, 189);
+  background-color: rgb(248, 251, 251);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -151,7 +151,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   border-radius: 8px;
-  background-color: rgba(238, 234, 234, 0.674);
+  background-color: #ffffffac;
 }
 
 .date {

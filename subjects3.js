@@ -73,12 +73,13 @@ function displayUniversities (inUniversity) {
       programLevel.innerHTML = `
       <br>
       <div id="programmeInfoText">PROGRAMME INFORMATION</div> 
+      <br>
       <div id="programmeInfoContainer">
-      <div id="level">Level:${inUniversity.level}</div>
-      <div id="exchangeStudents">Exchange Students:${inUniversity.exchangeStudents}</div> 
-      <div id="localStudents">Local Students:${inUniversity.localStudents}</div> 
-      <div id="successRate">Success Rate:${inUniversity.successRate}</div> 
-      <div id="entryGardes">Entry Grades: ${inUniversity.entryGrades}</div> 
+      <div id="level"><b>Level:</b> ${inUniversity.level}</div>
+      <div id="exchangeStudents"><b>Exchange Students:</b> ${inUniversity.exchangeStudents}</div> 
+      <div id="localStudents"><b>Local Students:</b> ${inUniversity.localStudents}</div> 
+      <div id="successRate"><b>Success Rate:</b> ${inUniversity.successRate}</div> 
+      <div id="entryGardes"><b>Entry Grades:</b> ${inUniversity.entryGrades}</div> 
       </div>
       `
       container.appendChild(universityName)
@@ -87,7 +88,9 @@ function displayUniversities (inUniversity) {
       getCommentsById(inUniversity.id).forEach(program => {
         let countryBanner = document.createElement('div')
         countryBanner.classList = 'country-comment'
-        countryBanner.innerHTML = ` <br> Comments:
+        countryBanner.innerHTML = `<br> <b>Comments:</b> 
+        <br>
+        <br>
         ${program.text}`
         programLevel.appendChild(countryBanner)
         container.appendChild(programLevel)

@@ -169,8 +169,6 @@ function readMoreButton() {
   let alwaysShow = document.getElementById("alwaysShow")
   let moreText = document.getElementsByClassName("more")
   let buttonText = document.getElementById("moreButton")
-  let cityText = document.getElementById("city-banner-text")
-  let comments = document.getElementById("comments")
 
 
 
@@ -179,8 +177,6 @@ function readMoreButton() {
   // }
 
   if (alwaysShow.style.display === "none") {
-    cityText.style.marginLeft = "15px"
-    comments.style.marginLeft = "0px"
     alwaysShow.style.display = "inline"
     buttonText.innerHTML = "Read more"
     // foor loop för att gå igenom moreText som är en array
@@ -188,8 +184,6 @@ function readMoreButton() {
     moreText[i].style.display = "none";
     }
   } else {
-    cityText.style.marginLeft = "126px"
-    comments.style.margin = "auto"
     alwaysShow.style.display = "none"
     buttonText.innerHTML = "Read less"
     // foor loop för att gå igenom moreText som är en array

@@ -110,8 +110,8 @@ h1 {
   -webkit-user-select: none;
   touch-action: manipulation;
   position: absolute;
-  top: 710px;
-  left: 800px;
+  top: 750px;
+  left: 900px;
 }
 
 #moreButton:after {

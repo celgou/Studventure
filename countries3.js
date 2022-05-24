@@ -23,7 +23,7 @@ function displaySubCities (cities) {
   let countryButton = document.createElement('div')
   countryButton.classList.add('back-button')
   countryButton.innerHTML = `&#8249;`
-  countryButton.addEventListener('click', () => renderCities(cities))
+  countryButton.addEventListener('click', () => history.go(0))
   container.appendChild(countryButton)
   // få fram bilden till staden
   let countryBanner = document.createElement('div')

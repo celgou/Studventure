@@ -109,7 +109,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-top: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
 } 
   
 .comments-city {
@@ -146,12 +146,12 @@ body {
 }
 
 .commentsBox {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.392) 0px 1px 4px;
+  height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.554);
+  background-color: rgba(238, 234, 234, 0.674);
 }
 
 .date {

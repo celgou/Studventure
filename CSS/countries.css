@@ -43,7 +43,7 @@ h2{
   border: 1px black solid;
   padding: 25px;
   width: 250px;
-  opacity: 50%;
+  opacity: 30%;
   transition: opacity 0.5s;
 }
 

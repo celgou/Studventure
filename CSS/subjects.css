@@ -29,6 +29,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-weight: bold;
+  transition: opacity 0.5s;
 
 }
 
@@ -41,11 +42,10 @@ h1 {
   padding: 25px;
   height: 80px;
   width: 250px;
-  opacity: 50%;
+  opacity: 35%;
   transition: opacity 0.5s;
   text-align: center;
   padding-top: 15px;
-  transition: background-color 1.5s;
 
 }
 

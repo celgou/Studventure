@@ -79,3 +79,16 @@ h1 {
   grid-column-gap: 10px;
   grid-row-gap: 10px; 
 }
+
+.country-text, .cityInfoContainer {
+  margin: auto;
+}
+
+.university-sub-banner-name {
+  margin-left: 164px;
+}
+
+.country-comment {
+  padding: 30px;
+  margin-top: 20px;
+}

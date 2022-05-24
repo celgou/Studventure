@@ -28,11 +28,15 @@ function displayProgrammes (inProgram) {
   countryButton.addEventListener('click', () => history.go(0))
   container.appendChild(countryButton)
 
+  let subjectTitle = document.createElement('div')
+  subjectTitle.classList.add('subject-title')
+  subjectTitle.innerHTML = `${inProgram.name}`
+  container.appendChild(subjectTitle)
+
   // Vi hämtar saker från Fields subjects 1 //
   let programmes = document.createElement('div')
-  ProgramName = document.createElement('h2')
-  ProgramName.classList.add('subject-title')
-  ProgramName.innerHTML = `${inProgram.name}`
+  ProgramName = document.createElement('div')
+  
   programmes.appendChild(ProgramName)
   programmes.classList.add('programmes')
   getProgrammesBySubjectID(inProgram.id).forEach(program => {
@@ -48,7 +52,7 @@ function displayProgrammes (inProgram) {
     getCityIdByUniversityID(program.universityID).forEach(cityInfo => {
       getCityNameByCityID(cityInfo.cityID).forEach(cityInfo => {
         getCountryByCityID(cityInfo.countryID).forEach(countryInfo => {
-          let programCityFlag = document.createElement('span')
+          let programCityFlag = document.createElement('div')
           programCityFlag.classList.add('program-sub-name-city')
           programCityFlag.style.color = 'black'
           programCityFlag.addEventListener('click', () =>

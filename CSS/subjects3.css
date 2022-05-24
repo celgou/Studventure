@@ -9,19 +9,19 @@ h1 {
   padding-right: 30px;
   color: black;
   margin: 15px;
+  margin-left: 20px;
 }
 
 
 .city-banner {
-  margin: auto;
   object-fit: cover;
-  height: 200px;
+  height: 220px;
   width: 70vw;
   border-radius: 10px;
   margin-bottom: 20px;
   object-position: center;
   opacity: 0.3;
-
+  margin-left: 220px;
 }
 
 
@@ -41,7 +41,7 @@ h1 {
 .university-name {
   border-radius: 56px;
   width: 100vh;
-
+  margin-left: 220px;
 }
 
 .university-sub-banner-name {
@@ -107,7 +107,7 @@ h1 {
   -webkit-user-select: none;
   touch-action: manipulation;
   position: absolute;
-  top: 750px;
+  top: 820px;
   left: 900px;
 }
 

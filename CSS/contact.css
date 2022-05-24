@@ -28,9 +28,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    background: url(travel.jpg);
+    background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
+  
   }
 
 h3{
@@ -53,7 +57,7 @@ h3{
     justify-content: center;
     width: 35px;
     height: 35px;
-    background-color: #fab15c;
+    background-color: lightslategray;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     position: fixed;
@@ -80,7 +84,7 @@ h3{
     width: 37px;
     height: 37px;
     transition: 0.2s;
-    background-color: #fab15c;
+    background-color: darkslategrey;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     position: fixed;
